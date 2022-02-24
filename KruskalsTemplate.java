@@ -81,5 +81,15 @@ public class KGraph {
 		//TO DO
 	}
 	
+	public static void main(String[] args) {
+		KGraph kg = new KGraph("wugraph1.txt", 5);
+		kg.printEdges();
+		KGraph mst = kg.Kruskals();
+		System.out.println("MST: ");
+		mst.printEdges();
+		
+	}
+
+	
 
 }
